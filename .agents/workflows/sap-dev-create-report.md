@@ -40,6 +40,11 @@ Please execute the following sequence:
 Step 0: Planning & Drafting
 Required Skill: [Skill: Scratchpad]
 Action: Draft the RAP architecture, object names, and logic in the scratchpad before executing subsequent steps to ensure correctness and save tokens.
+Save the scratchpad draft to the path:
+`/Users/duckpower/IDE WorkSpaces/abap_workspaces/generated_docs/scratchpads/scratchpad_[ReportName].md`
+All project tracking/walkthrough artifacts (such as implementation plans, task checklists, and final walkthroughs) must be saved under:
+`/Users/duckpower/IDE WorkSpaces/abap_workspaces/generated_docs/walkthroughs/`
+
 
 Step 1: Query Data (CDS Data Models)
 

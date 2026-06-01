@@ -1,0 +1,8 @@
+# Ignore generated documents and analysis files
+generated_docs/
+
+# Ignore scratchpad/temporary files
+scratch/
+
+# Ignore input functional specification documents
+fs_docs/
