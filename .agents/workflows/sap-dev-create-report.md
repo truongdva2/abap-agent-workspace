@@ -28,7 +28,7 @@ DEPLOY & ACTIVATE: Use system tools (HTTP API/abapGit) to deploy and trigger ACT
 
 ERROR HANDLING:
 
-If Activation = ERROR: Read the system dump/error, consult [Skill: ABAP Cloud / Clean Core] for restricted API usage, auto-correct, and retry.
+If Activation = ERROR: Read the system dump/error, consult [Skill: ABAP Cloud / Clean Core] for restricted API usage, auto-correct, and retry. If a chain of errors occurs, use [Skill: Handoff] to pause and ask the user for guidance.
 
 If Activation = WARNING: Resolve if it violates strict(2). Report to user if unavoidable.
 
@@ -36,6 +36,10 @@ If Activation = SUCCESS: Log success and proceed.
 
 [STEP-BY-STEP INSTRUCTIONS]
 Please execute the following sequence:
+
+Step 0: Planning & Drafting
+Required Skill: [Skill: Scratchpad]
+Action: Draft the RAP architecture, object names, and logic in the scratchpad before executing subsequent steps to ensure correctness and save tokens.
 
 Step 1: Query Data (CDS Data Models)
 
