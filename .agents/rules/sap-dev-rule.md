@@ -13,6 +13,8 @@ Ask explicitly before any Create/Update/Delete (CUD).
 
 Modify ONLY Custom Objects (Z/Y). NEVER modify Standard Objects.
 
+[NEW] EXISTING OBJECT COLLISION: Before creating any new object, you MUST check if the object name already exists in ANY custom package (Z*), not just the currently specified package. If the object already exists globally, DO NOT modify the existing object. Ask the user for confirmation and automatically propose a new name. Only proceed if the user approves the new name.
+
 [NEW] STRICT SCOPE CONTROL: Interact and modify ONLY the exact objects mentioned in the current task scope. NEVER touch, modify, or reference any unrelated objects, packages, or configurations.
 
 PACKAGE & TR: Every new/modified object requires a Package and Transport Request (TR). If missing, STOP and ask the user.

@@ -25,6 +25,7 @@ These skills focus on translating functional requirements into structured techni
 | **ABAP Logic & Behavior Translator** | Senior ABAP Cloud Developer (Consultant) | [SKILL.md](./skills/Consultant/fs-logic-behavior-translator/SKILL.md) | Analyzes processing logic to determine implementation layers (CDS logic, Virtual Elements, or RAP Behavior Pool). | `business rules`, `calculated fields`, `virtual elements`, `derived logic`, `actions`, `logic xử lý`, `quy tắc nghiệp vụ`, `tính toán`, `hành vi` |
 | **Integration & API Analyzer** | Expert SAP Integration Architect | [SKILL.md](./skills/Consultant/fs-integration-api-analyzer/SKILL.md) | Extracts integration patterns, API specifications (OData, REST), JSON payloads, and mapping tables from FS. | `integration`, `OData API`, `REST API`, `mapping`, `JSON payload`, `payload`, `tích hợp`, `giao tiếp hệ thống`, `kết nối API`, `cấu trúc JSON` |
 | **FS Vision Extractor** | Expert SAP Multimodal Analyst | [SKILL.md](./skills/Consultant/fs-vision-extractor/SKILL.md) | Extracts UI mockups, Excel tables, and flowchart logic from images embedded in FS documents into Markdown. | `image`, `mockup`, `vision`, `extract image`, `flowchart`, `excel screenshot`, `xử lý ảnh`, `nhận diện ảnh`, `trích xuất ảnh` |
+| **Find Released CDS View** | Expert SAP Data Architect | [SKILL.md](./skills/Consultant/find-released-cds-view/SKILL.md) | Finds the best SAP released CDS view (DDLS) for a RAP/reporting field by matching business object, screen context, data grain, field availability, and local coverage against S/4HANA Cloud Public Edition released APIs. | `released CDS`, `find CDS view`, `DDLS`, `released API`, `clean core CDS`, `value help view`, `I_*`, `tìm CDS view`, `CDS released`, `data source RAP` |
 
 ---
 
@@ -69,5 +70,5 @@ These skills modify the agent's behavior to optimize communication, planning, an
 
 ## 🔀 WORKFLOW ROUTING INTEGRATION
 The workflows inside `.agents/workflows/` invoke these skills dynamically:
-- **/sap-dev-analytic-fs**: Sequentially loads `Data Model Extractor`, `Fiori UI Elements Mapper`, and `ABAP Logic & Behavior Translator` to generate Technical Specs from an FS.
-- **/sap-dev-create-report**: Steps reference `CDS View Entities`, `Authorization & IAM`, `RAP Model`, `OData Service Development`, and `Clean ABAP` to write and deploy code.
+- **/sap-dev-analytic-fs**: Sequentially loads `Data Model Extractor`, `Find Released CDS View` (to validate released clean-core sources), `Fiori UI Elements Mapper`, and `ABAP Logic & Behavior Translator` to generate Technical Specs from an FS.
+- **/sap-dev-create-report**: Steps reference `Find Released CDS View` (to verify data sources before coding), `CDS View Entities`, `Authorization & IAM`, `RAP Model`, `OData Service Development`, and `Clean ABAP` to write and deploy code.
