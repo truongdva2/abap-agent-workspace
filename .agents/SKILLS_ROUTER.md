@@ -72,3 +72,9 @@ These skills modify the agent's behavior to optimize communication, planning, an
 The workflows inside `.agents/workflows/` invoke these skills dynamically:
 - **/sap-dev-analytic-fs**: Sequentially loads `Data Model Extractor`, `Find Released CDS View` (to validate released clean-core sources), `Fiori UI Elements Mapper`, and `ABAP Logic & Behavior Translator` to generate Technical Specs from an FS.
 - **/sap-dev-create-report**: Steps reference `Find Released CDS View` (to verify data sources before coding), `CDS View Entities`, `Authorization & IAM`, `RAP Model`, `OData Service Development`, and `Clean ABAP` to write and deploy code.
+- **/sap-dev-bug-fix**: Integrates `Grill Me`, `Scratchpad`, `Data Model Extractor` and `ABAP Logic & Behavior Translator` for root cause analysis with mock data, enforces cross-impact checks, and applies code fixes with `ABAP Unit Testing` and `Clean ABAP` to ensure regression-free deployment in DEV.
+- **/sap-dev-api-inbound**: Integrates `Scratchpad`, `ABAP Cloud / Clean Core`, and `Clean ABAP` to design, implement, and validate an INBOUND API integration adhering to the `Z_API_FWK` framework.
+- **/sap-dev-api-outbound**: Integrates `Scratchpad`, `RAP`, and `Clean ABAP` to construct Outbound API integrations, format payloads, and manage response status updates using `ZCL_API_FWK=>execute_api`.
+- **/sap-dev-system-analysis**: Integrates `Scratchpad`, `Data Model Extractor`, and `ABAP Logic & Behavior Translator` to systematically scan, deep-dive, and document SAP objects or packages into comprehensive Markdown technical reports.
+- **/sap-dev-code-review**: Integrates `ABAP Lint & Review`, `ABAP SQL & AMDP`, and `Clean ABAP` to scrutinize code, provide risk analysis, performance optimization suggestions, and maintainability feedback without auto-refactoring code.
+
