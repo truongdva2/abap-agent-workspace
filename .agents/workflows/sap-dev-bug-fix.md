@@ -31,8 +31,8 @@
 - **HALT and wait for the User's explicit approval** of the proposed solution.
 
 ### Phase 4: Fix Implementation & Quality Assurance
-4. **Load `CDS View Entities`, `RAP Model` (or the appropriate technical skill) & `Clean ABAP`**:
-   - Implement the code changes based on the approved solution. Ensure the code is optimized and strictly follows `Clean ABAP` principles.
+4. **Load `CDS View Entities`, `RAP Model`, `Modern ABAP Syntax`, `OO Design Patterns` & `Clean ABAP`**:
+   - Implement the code changes based on the approved solution. Ensure the code uses Modern ABAP syntax and strictly follows `Clean ABAP` principles. Apply OO Design Patterns if refactoring complex logic.
 5. **Load `ABAP Unit Testing`**:
    - Create or update the Local Test Class (`cl_abap_unit_assert`) using Test Doubles and the Mock Data provided by the User.
    - **Note:** Creating an ABAP Unit Test using Mock Data is mandatory to compensate for the lack of real data in DEV and to prevent future regressions.

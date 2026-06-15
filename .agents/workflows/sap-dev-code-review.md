@@ -40,10 +40,11 @@ Action: Evaluate the execution efficiency:
 - Recommend modern AMDP/CDS pushdown strategies if applicable.
 
 Step 3: Maintainability & Clean Core Audit
-Required Skill: [Skill: Clean ABAP]
+Required Skill: [Skill: Clean ABAP], [Skill: Modern ABAP Syntax], [Skill: OO Design Patterns]
 Action: 
-- Verify naming conventions.
-- Evaluate method length, complexity, and number of parameters.
+- Verify naming conventions and method length/complexity.
+- Enforce the use of Modern ABAP syntax (Constructor expressions, inline declarations) instead of legacy statements.
+- Identify procedural logic that should be refactored using OO Design Patterns.
 - Suggest SAP standard helper classes (e.g., `cl_bcs_mail`, `xco_cp_json`) instead of custom monolithic logic.
 
 Step 4: Cross-Impact & Regression Analysis

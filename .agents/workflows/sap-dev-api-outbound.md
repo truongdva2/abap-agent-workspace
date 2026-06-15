@@ -32,9 +32,9 @@ Action: Create necessary structures (DDLS/TABL/TTYP) representing the Request pa
 Execute: Lint -> Push -> Activate.
 
 Step 2: Implement Outbound Integration Logic
-Required Skill: [Skill: RAP] & [Skill: Clean ABAP]
+Required Skill: [Skill: RAP], [Skill: Clean ABAP], [Skill: Modern ABAP Syntax], [Skill: OO Design Patterns]
 Action: 
-- If triggered by RAP, implement the behavior action (e.g. `FOR MODIFY`).
+- If triggered by RAP, implement the behavior action (e.g. `FOR MODIFY`). Use Modern ABAP Syntax to map and process data.
 - Gather business data (e.g. read Sales Order details).
 - Construct the request payload and headers using `zif_api_fwk_types=>ty_dynamic_request`.
 - Call `NEW zcl_api_fwk( )->execute_api( EXPORTING iv_api_id = ... is_dynamic_request_value = ... IMPORTING es_logger = ... CHANGING c_response_data = ... )`.

@@ -24,8 +24,8 @@ abap_workspaces/
 │   │   │   ├── fs-integration-api-analyzer/
 │   │   │   └── fs-vision-extractor/
 │   │   ├── Developer/              # 💻 Development & Technical ABAP Cloud skills
-│   │   │   ├── abap/ , abap-cloud/ , clean-abap/ , naming-convension/ ...
-│   │   │   └── rap/ , cds-view-entities/ , odata/ , authorization-iam/ ...
+│   │   │   ├── abap/ , abap-cloud/ , clean-abap/ , naming-convension/ , modern-abap-syntax/ , oo-design-patterns/ ...
+│   │   │   └── rap/ , cds-view-entities/ , odata/ , authorization-iam/ , abap-generative-ai/ ...
 │   │   └── Productivity/           # 🚀 Performance Optimization & Context Management skills
 │   │       └── grill-me/ , caveman/ , handoff/ , scratchpad/
 │   └── workflows/                  # ⚙️ Business process automation scripts
@@ -53,6 +53,7 @@ This is the central directory managing all Skills. When you assign a task, the A
 
 ### 2. Automated Development Rules (`rules/sap-dev-rule.md`)
 Rules running silently during each interaction. It forces the Agent to strictly follow:
+* **Modern ABAP & Design Patterns:** Enforce the use of modern ABAP syntax (Constructor Expressions, String Templates) and GoF OO Design Patterns.
 * **Clean Core:** Use CDS Views to read data and EML (Entity Manipulation Language) to write data. Absolutely no direct modification of physical tables.
 * **Custom Only (Z/Y):** Only operate on custom Z/Y objects of the project. Do not modify SAP standard objects.
 * **TR & Package:** Every new/modified object must clearly declare a Package and a Transport Request.

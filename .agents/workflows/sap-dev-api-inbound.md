@@ -32,9 +32,9 @@ Action: Create necessary structures (DDLS/TABL/TTYP) to represent the Request an
 Execute: Lint -> Push -> Activate.
 
 Step 2: Implement Handler Class
-Required Skill: [Skill: Clean ABAP] & [Skill: Released ABAP Classes]
+Required Skill: [Skill: Clean ABAP], [Skill: Released ABAP Classes], [Skill: Modern ABAP Syntax], [Skill: OO Design Patterns]
 Action: 
-- Create a global class (e.g. `ZCL_IB_[API_NAME]`) that implements the interface `ZIF_API_INBOUND_HANDLER`.
+- Create a global class (e.g. `ZCL_IB_[API_NAME]`) that implements the interface `ZIF_API_INBOUND_HANDLER`. Apply OO Design Patterns (e.g., Strategy) if handling multiple payload types.
 - Implement `handle_request` method:
   - Parse the input payload (e.g. using helper classes like `xco_cp_json` or `zcl_api_fwk=>json_to_abap`).
   - Execute core business logic (e.g. EML to create Sales Order or Business Object).

@@ -53,6 +53,9 @@ These skills contain precise syntax rules, code templates, and development guide
 | **RAP Business Events** | [SKILL.md](./skills/Developer/rap-business-events/SKILL.md) | Defines and raises entity events linked to SAP Event Mesh for event-driven patterns. | `event mesh`, `business event`, `raise event`, `event binding`, `sự kiện rap`, `event mesh` |
 | **Released ABAP Classes** | [SKILL.md](./skills/Developer/released-abap-classes/SKILL.md) | Full catalog and examples of BTP/Cloud-released helper classes (Console, Mail, HTTP). | `released class`, `CL_BCS_MAIL`, `XCO_CP_JSON`, `UUID`, `thư viện class`, `helper class` |
 | **SAP Fiori Apps Reference** | [SKILL.md](./skills/Developer/sap-fiori-apps-reference/SKILL.md) | Generates Fiori Launchpad URLs and queries the Fiori Apps Reference Library. | `Fiori library`, `AppList`, `Launchpad URL`, `semantic object`, `tra cứu ứng dụng`, `fiori library` |
+| **Modern ABAP Syntax** | [SKILL.md](./skills/Developer/modern-abap-syntax/SKILL.md) | Modern ABAP for Cloud syntax: Constructor Expressions, string processing, dynamic programming. | `constructor expression`, `string template`, `REDUCE`, `VALUE`, `inline declaration`, `cú pháp abap`, `abap syntax` |
+| **OO Design Patterns** | [SKILL.md](./skills/Developer/oo-design-patterns/SKILL.md) | GoF Object-Oriented Design Patterns implemented in modern ABAP (Singleton, Factory, Observer, etc.). | `design pattern`, `singleton`, `factory`, `observer`, `strategy`, `mẫu thiết kế`, `oop abap` |
+| **ABAP Generative AI** | [SKILL.md](./skills/Developer/abap-generative-ai/SKILL.md) | Integration of LLMs and Generative AI in ABAP Cloud using ISLM and ABAP AI SDK. | `generative ai`, `ai sdk`, `islm`, `llm`, `tích hợp ai`, `openai abap` |
 
 ---
 

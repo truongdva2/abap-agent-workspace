@@ -74,9 +74,9 @@ Execute: Lint -> Push -> Activate.
 
 Step 4: Class Implementation (Behavior Pool)
 
-Required Skill: [Skill: RAP] & [Skill: ABAP SQL & AMDP]
+Required Skill: [Skill: RAP], [Skill: ABAP SQL & AMDP] & [Skill: Modern ABAP Syntax]
 
-Action: (Skip if Read-only). Generate the ABAP Global Class (CLASS lhc_...). Use modern ABAP SQL (inline declarations, EML syntax) for business logic.
+Action: (Skip if Read-only). Generate the ABAP Global Class (CLASS lhc_...). Use modern ABAP SQL and Modern ABAP Syntax (Constructor Expressions, String Templates, EML syntax) for business logic.
 
 Execute: Lint -> Push -> Activate.
 
