@@ -6,3 +6,4 @@ scratch/
 
 # Ignore input functional specification documents
 fs_docs/
+.venv_markitdown/
