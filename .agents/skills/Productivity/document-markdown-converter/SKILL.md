@@ -13,20 +13,20 @@ Never attempt to read raw binary files (`.pdf`, `.docx`, `.xlsx`) directly. Alwa
 ## Workflow
 
 ### 1. Environment Verification
-Check if MarkItDown is installed by running the terminal command:
+Check if the virtual environment binary exists:
 ```bash
-markitdown --version
+"/Users/duckpower/IDE WorkSpaces/abap_workspaces/.venv_markitdown/bin/markitdown" --version
 ```
-If the command fails (command not found), install it immediately via pip:
+If the command fails (command not found), create the venv and install it:
 ```bash
-pip install 'markitdown[all]'
+/opt/homebrew/bin/python3.12 -m venv "/Users/duckpower/IDE WorkSpaces/abap_workspaces/.venv_markitdown" && "/Users/duckpower/IDE WorkSpaces/abap_workspaces/.venv_markitdown/bin/pip" install 'markitdown[all]'
 ```
 
 ### 2. Document Conversion
 Locate the input file (usually inside `fs_docs/`).
 Execute the conversion command and output to the `generated_docs/scratchpads/` directory:
 ```bash
-markitdown "fs_docs/[Your_File_Name.ext]" -o "generated_docs/scratchpads/fs_markdown.md"
+"/Users/duckpower/IDE WorkSpaces/abap_workspaces/.venv_markitdown/bin/markitdown" "fs_docs/[Your_File_Name.ext]" -o "generated_docs/scratchpads/fs_markdown.md"
 ```
 
 ### 3. Handoff to Analysis
